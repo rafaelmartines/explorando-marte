@@ -34,9 +34,32 @@ public class DirecaoServiceTest {
     }
 
     @Test
+    @DisplayName("Deveria retornar coordenada da sonda em 1 3 N")
+    public void deveriaRetornar13N() {
+        Planalto planalto = PlanaltoService.converterArgumento("5 5");
+        Sonda sonda = SondaService.converterArgumento("1 2 N");
+        Sonda novaPosicaoSonda = JoystickService.mover(planalto, sonda, "LMLMLMLMM");
+        Sonda expectedNovaPosicaSonda = new Sonda(1, 3, "N");
+
+        assertAll("sonda",
+                () -> assertEquals(expectedNovaPosicaSonda.getCoordenadaX(), novaPosicaoSonda.getCoordenadaX()),
+                () -> assertEquals(expectedNovaPosicaSonda.getCoordenadaY(), novaPosicaoSonda.getCoordenadaY()),
+                () -> assertEquals(expectedNovaPosicaSonda.getPontoCardeal(), novaPosicaoSonda.getPontoCardeal())
+        );
+    }
+
+    @Test
+    @DisplayName("Deveria retornar coordenada da sonda em 5 1 E")
     public void deveriaRetornar51E() {
         Planalto planalto = PlanaltoService.converterArgumento("5 5");
         Sonda sonda = SondaService.converterArgumento("3 3 E");
-        String joystick = JoystickService.mover(planalto, sonda, "MMRMMRMRRM");
+        Sonda novaPosicaoSonda = JoystickService.mover(planalto, sonda, "MMRMMRMRRM");
+        Sonda expectedNovaPosicaSonda = new Sonda(5, 1, "E");
+
+        assertAll("sonda",
+                () -> assertEquals(expectedNovaPosicaSonda.getCoordenadaX(), novaPosicaoSonda.getCoordenadaX()),
+                () -> assertEquals(expectedNovaPosicaSonda.getCoordenadaY(), novaPosicaoSonda.getCoordenadaY()),
+                () -> assertEquals(expectedNovaPosicaSonda.getPontoCardeal(), novaPosicaoSonda.getPontoCardeal())
+        );
     }
 }

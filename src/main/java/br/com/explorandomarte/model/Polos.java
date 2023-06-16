@@ -3,29 +3,29 @@ package br.com.explorandomarte.model;
 public enum Polos {
     W {
         @Override
-        int coeficiente() {
+        public int coeficiente() {
             return -1;
         }
     },
     S {
         @Override
-        int coeficiente() {
+        public int coeficiente() {
             return -1;
         }
     },
     E {
         @Override
-        int coeficiente() {
+        public int coeficiente() {
             return 1;
         }
     },
     N {
         @Override
-        int coeficiente() {
+        public int coeficiente() {
             return 1;
         }
     }
     ;
 
-    abstract int coeficiente();
+    public abstract int coeficiente();
 }

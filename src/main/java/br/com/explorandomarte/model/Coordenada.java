@@ -4,7 +4,7 @@ public enum Coordenada {
 
     L {
         @Override
-        String novaCoordenada(String polo) {
+        public String novaCoordenada(String polo) {
             String novoPolo = "";
             switch (polo) {
                 case "E" -> novoPolo = "N";
@@ -17,7 +17,7 @@ public enum Coordenada {
     },
     R {
         @Override
-        String novaCoordenada(String polo) {
+        public String novaCoordenada(String polo) {
             String novoPolo = "";
             switch (polo) {
                 case "E" -> novoPolo = "S";
@@ -29,5 +29,5 @@ public enum Coordenada {
         }
     };
 
-    abstract String novaCoordenada(String polo);
+    public abstract String novaCoordenada(String polo);
 }
