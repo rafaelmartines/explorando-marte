@@ -1,6 +1,6 @@
-package br.com.alura.explorandomarte.service;
+package br.com.explorandomarte.service;
 
-import br.com.alura.explorandomarte.model.Planalto;
+import br.com.explorandomarte.model.Planalto;
 
 import static java.lang.Integer.parseInt;
 

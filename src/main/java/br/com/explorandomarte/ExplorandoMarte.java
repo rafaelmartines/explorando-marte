@@ -1,7 +1,7 @@
-package br.com.alura.explorandomarte;
+package br.com.explorandomarte;
 
-import br.com.alura.explorandomarte.model.Planalto;
-import br.com.alura.explorandomarte.service.PlanaltoService;
+import br.com.explorandomarte.model.Planalto;
+import br.com.explorandomarte.service.PlanaltoService;
 
 import java.util.Scanner;
 

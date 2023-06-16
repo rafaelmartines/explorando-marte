@@ -1,9 +1,9 @@
-package br.com.alura.explorandomarte.service;
+package br.com.explorandomarte.service;
 
-import br.com.alura.explorandomarte.model.Coordenada;
-import br.com.alura.explorandomarte.model.Planalto;
-import br.com.alura.explorandomarte.model.Polos;
-import br.com.alura.explorandomarte.model.Sonda;
+import br.com.explorandomarte.model.Coordenada;
+import br.com.explorandomarte.model.Planalto;
+import br.com.explorandomarte.model.Polos;
+import br.com.explorandomarte.model.Sonda;
 
 public class JoystickService {
     public static String mover(Planalto planalto, Sonda sonda, String sequencia) {

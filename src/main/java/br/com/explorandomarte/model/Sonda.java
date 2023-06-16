@@ -1,4 +1,4 @@
-package br.com.alura.explorandomarte.model;
+package br.com.explorandomarte.model;
 
 public class Sonda {
     private final Integer coordenadaX;
