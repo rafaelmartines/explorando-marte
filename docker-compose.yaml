@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  java:
+    container_name: explorando-marte
+    tty: true
+    volumes:
+      - ./:/app
+    build: .
+    restart: no

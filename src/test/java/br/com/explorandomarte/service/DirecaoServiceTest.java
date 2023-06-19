@@ -38,7 +38,7 @@ public class DirecaoServiceTest {
     public void deveriaRetornar13N() {
         Planalto planalto = PlanaltoService.converterArgumento("5 5");
         Sonda sonda = SondaService.converterArgumento("1 2 N");
-        Sonda novaPosicaoSonda = JoystickService.mover(planalto, sonda, "LMLMLMLMM");
+        Sonda novaPosicaoSonda = SondaService.mover(planalto, sonda, "LMLMLMLMM");
         Sonda expectedNovaPosicaSonda = new Sonda(1, 3, "N");
 
         assertAll("sonda",
@@ -53,7 +53,7 @@ public class DirecaoServiceTest {
     public void deveriaRetornar51E() {
         Planalto planalto = PlanaltoService.converterArgumento("5 5");
         Sonda sonda = SondaService.converterArgumento("3 3 E");
-        Sonda novaPosicaoSonda = JoystickService.mover(planalto, sonda, "MMRMMRMRRM");
+        Sonda novaPosicaoSonda = SondaService.mover(planalto, sonda, "MMRMMRMRRM");
         Sonda expectedNovaPosicaSonda = new Sonda(5, 1, "E");
 
         assertAll("sonda",
