@@ -44,14 +44,19 @@ A saída deverá contar uma linha para cada sonda, na mesma ordem de entrada, in
 #### Entrada de Teste
 
 5 5
+
 1 2 N
+
 LMLMLMLMM
+
 3 3 E
+
 MMRMMRMRRM
 
 #### Saída esperada
 
 1 3 N
+
 5 1 E
 
 Ao terminar, nos envie o link do repo público no GitHub para que possamos baixar, rodar e avaliar o desafio.
