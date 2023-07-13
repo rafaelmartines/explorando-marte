@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ExplorandoMarte {
 
     public static void main(String[] args) {
-        String delimiter = "\n";
+        String delimiter = System.getProperty("line.separator");
 
         Scanner planalto = new Scanner(System.in).useDelimiter(delimiter);
         Scanner sonda = new Scanner(System.in).useDelimiter(delimiter);

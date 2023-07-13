@@ -1,4 +1,4 @@
 FROM openjdk:17-alpine
-MAINTAINER github/mmarcosab
+MAINTAINER github/rafaelmartines
 WORKDIR /app
-ENTRYPOINT ["java", "-jar", "/app/out/artifacts/explorando_marte_jar/explorando-marte.jar"]
+ENTRYPOINT ["/bin/sh", "build.sh"]
